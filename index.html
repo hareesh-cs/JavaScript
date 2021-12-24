@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            Assignmnet -1
+        </title> 
+    </head> 
+      
+    <body style = "text-align:center;"> 
+          
+        <h1 style = "color:blue;" > 
+            Assignmnet - 1 
+        </h1> 
+          
+        <p> 
+            Passing function as arguments. 
+        </p> 
+          <input type="text" id="name" placeholder="enter your name" required ></input>
+        <button onclick = "fun1(document.getElementById('name').value,fun2)"> 
+            Click Here 
+        </button>     
+          
+        <script> 
+            function fun1(name,fun2){
+                alert(fun2(name));
+            }
+            function fun2(name){
+                return "Hi My Name is "+name;
+            }
+        </script> 
+    </body> 
+</html>                    
